@@ -4,9 +4,7 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <>
-      <div className="shadow-md sticky top-0 z-10">
-        <NavBar />
-      </div>
+      <NavBar />
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );

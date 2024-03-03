@@ -2,68 +2,63 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-scroll";
-
-interface NavLink {
-  href: string;
-  name: string;
-}
-
-const NavLinks: NavLink[] = [
-  { href: "home", name: "Home" },
-  { href: "about", name: "About" },
-  { href: "project", name: "Project" },
-  { href: "contact", name: "Contact" },
-];
+import NavList from "./NavList";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const content = (
+  return (
     <>
-      <div className="lg:hidden block absolute top-14 w-full left-0 bg-white right-0 transition shadow-md">
-        <ul className="text-center text-xl">
-          {NavLinks.map((link) => (
-            <Link spy={true} smooth={true} key={link.href} to={link.href}>
-              <li className="py-4 hover:bg-blue-800 hover:text-white">
-                {link.name}
-              </li>
+      <div className="sticky top-0 z-10 shadow-md">
+        <section className="max-w-5xl mx-auto p-4 flex justify-between items-center">
+          <h1 className="text-3xl font-medium">
+            <Link spy={true} smooth={true} to="home">
+              你好! Welcome!
             </Link>
-          ))}
-        </ul>
+          </h1>
+
+          <div>
+            {/* mobile */}
+            <button
+              className="text-3xl sm:hidden focus:outline-none"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
+            </button>
+            {/* desktop nav list */}
+            <nav
+              className="hidden sm:block space-x-8 text-xl"
+              arial-label="main"
+            >
+              <ul className="flex gap-6">
+                <NavList
+                  list_classes={[
+                    "hover:text-blue-600",
+                    "transition",
+                    "cursor-pointer",
+                  ]}
+                />
+              </ul>
+            </nav>
+
+            {/* mobile nav list */}
+            {menuOpen && (
+              <div>
+                <ul className="sm:hidden block absolute w-full left-0 right-0 bg-white transition shadow-md text-center text-xl">
+                  <NavList
+                    list_classes={[
+                      "py-4",
+                      "hover:bg-blue-800",
+                      "hover:text-white",
+                    ]}
+                  />
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
       </div>
     </>
-  );
-
-  return (
-    <nav>
-      <div className="h-10vh flex justify-between z-50 lg:py-5 px-10 py-4">
-        <div className="flex items-center flex-1">
-          <h2 className="text-3xl">你好! Welcome!</h2>
-        </div>
-        <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
-          <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[18px]">
-              {NavLinks.map((link) => (
-                <Link spy={true} smooth={true} key={link.href} to={link.href}>
-                  <li className="hover:text-blue-600 transition hover:border-b-2 border-slate-900 hover:border-blue-600 cursor-pointer">
-                    {link.name}
-                  </li>
-                </Link>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div>{menuOpen && content}</div>
-
-        <button
-          className="block md:hidden transition"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
-        </button>
-      </div>
-    </nav>
   );
 };
 
