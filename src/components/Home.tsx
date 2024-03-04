@@ -21,12 +21,12 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-[calc(100svh-74px)] flex flex-col justify-start sm:justify-center item-center gap-4 p-8 sm:p-16"
+      className="min-h-[calc(100svh-74px)] flex flex-col justify-center sm:justify-center item-center sm:gap-4 p-3 sm:p-8 sm:p-16"
     >
       <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-8">
         {/* left */}
         <article className="sm:w-1/2">
-          <h1 className="max-w-xl text-3xl font-bold text-center sm:text-5xl text-slate-900">
+          <h1 className="max-w-xl text-2xl sm:text-3xl font-bold text-center sm:text-5xl text-slate-900">
             Full-Stack Developer{" "}
             <img
               className="hidden sm:inline-block"
@@ -36,11 +36,11 @@ const Home = () => {
               height="30"
             />
           </h1>
-          <p className="max-w-xl text-2xl mt-3 text-center text-slate-700">
+          <p className="max-w-xl text-xl sm:text-2xl mt-3 text-center text-slate-700">
             Hi, I'm Pei-Ying Wu — A Full-Stack developer passionate about
             Front-end development based in Sydney, Australia. 📍
           </p>
-          <div className="flex justify-center my-3">
+          <div className="flex justify-center my-1 sm:my-3">
             <a
               className="text-blue-600 hover:text-blue-500 glow p-2 text-4xl"
               href="https://www.linkedin.com/in/peiyingwu"
@@ -59,9 +59,9 @@ const Home = () => {
         </article>
 
         {/* right */}
-        <div className="md:w-1/3 sm:mx-auto">
+        <div className="sm:mx-auto md:w-1/3">
           <img
-            className="rounded-lg w-1/2 md:w-full mx-auto"
+            className="rounded-lg w-2/5 md:w-full mx-auto"
             src="../../public/PeiYingWu.jpg"
             alt="Pei Ying Wu"
             width="277"
@@ -71,9 +71,9 @@ const Home = () => {
       </div>
 
       {/* bottom */}
-      <div className="w-full flex flex-wrap item-center">
+      <div className="w-full flex flex-wrap item-center justify-center">
         <p className="text-xl text-slate-700 text-center">Tech skills:</p>
-        <ul className="ml-5 text-5xl flex gap-4">
+        <ul className="ml-5 text-5xl flex gap-4 flex-wrap justify-center">
           <li>
             <Tooltip message={"HTML"}>
               <FaHtml5 className="text-orange-600" />
