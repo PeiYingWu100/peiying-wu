@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="sticky top-0 z-10 shadow-md bg-white">
         <section className="max-w-5xl mx-auto p-4 flex justify-between items-center">
           <h1 className="text-3xl font-medium">
-            <Link spy={true} smooth={true} to="home">
+            <Link spy={true} smooth={true} to="home" offset={-70}>
               你好! Welcome!
             </Link>
           </h1>
@@ -25,7 +25,7 @@ const NavBar = () => {
             >
               {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
             </button>
-            
+
             {/* desktop nav list */}
             <nav
               className="hidden sm:block space-x-8 text-xl"

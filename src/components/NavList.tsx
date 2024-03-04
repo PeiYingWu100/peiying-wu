@@ -25,6 +25,7 @@ const NavList = ({ list_classes, onClick }: Props) => {
       key={link.href}
       to={link.href}
       onClick={onClick}
+      offset={-70}
     >
       <li className={list_classes.join(" ")}>{link.name}</li>
     </Link>
