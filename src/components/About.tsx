@@ -2,7 +2,7 @@ import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 import SoftSkills from "./SoftSkills";
 import WorkHistory from "./WorkHistory";
-import Education from "./Education";
+import Education from "./EducationHistory";
 
 const TabTitleList = [
   { title: "Personal Attributes", child: <SoftSkills /> },
