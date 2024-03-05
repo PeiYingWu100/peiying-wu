@@ -55,7 +55,7 @@ const EmployHistories: History[] = [
     org: "Funraisin, Sydney, New South Wales",
     start: new Date(2020, 9),
     end: new Date(2023, 5),
-    work_details: FunraisinDev.map((item, ind) => (
+    details: FunraisinDev.map((item, ind) => (
       <li key={ind} className="list-disc">
         {item.desc}
       </li>
@@ -66,7 +66,7 @@ const EmployHistories: History[] = [
     org: "HandUp, Sydney, New South Wales",
     start: new Date(2020, 2),
     end: new Date(2020, 9),
-    work_details: HandUpDev.map((item, ind) => (
+    details: HandUpDev.map((item, ind) => (
       <li key={ind} className="list-disc">
         {item.desc}
       </li>

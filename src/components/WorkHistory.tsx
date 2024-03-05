@@ -8,12 +8,12 @@ const WorkHistory = () => {
       {EmployHistories.map((work, ind) => (
         <Timeline
           key={ind}
-          employ_history={work}
+          history={work}
           title={work.title}
           org={work.org}
           start={work.start}
           end={work.end}
-          work_details={work.work_details}
+          details={work.details}
         />
       ))}
     </TimeLines>

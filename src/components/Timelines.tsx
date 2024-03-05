@@ -11,12 +11,12 @@ const TimeLines = ({ children }: Props) => {
       {children.map((item, ind) => (
         <Timeline
           key={ind}
-          employ_history={item.props}
+          history={item.props}
           title={item.props.title}
           org={item.props.org}
           start={item.props.start}
           end={item.props.end}
-          work_details={item.props.work_details}
+          details={item.props.details}
         />
       ))}
     </ul>
