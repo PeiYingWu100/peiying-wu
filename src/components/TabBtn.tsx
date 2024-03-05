@@ -9,7 +9,7 @@ const TabBtn = ({ title, index, active_classes, setSelectedTab }: Props) => {
   return (
     <li className="grow">
       <button
-        className={`border-2 border-slate-600 rounded-lg w-full py-2 hover:bg-slate-600 hover:text-white ${active_classes}`}
+        className={`border-2 border-violet-400 rounded-lg w-full py-2 hover:bg-violet-400 hover:text-white ${active_classes}`}
         onClick={() => setSelectedTab(index)}
       >
         {title}

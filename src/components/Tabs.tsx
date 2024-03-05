@@ -14,9 +14,7 @@ const Tabs = ({ children }: Props) => {
         {children.map((item, index) => (
           <TabBtn
             active_classes={
-              selectedTab === index
-                ? "bg-slate-600 text-white"
-                : "bg-white text-slate-600"
+              selectedTab === index ? "bg-violet-400 text-white" : "bg-white"
             }
             key={index}
             title={item.props.title}

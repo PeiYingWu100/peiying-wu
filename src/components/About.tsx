@@ -12,8 +12,11 @@ const TabTitleList = [
 
 const About = () => {
   return (
-    <section id="about" className="min-h-[calc(100svh-74px)] bg-zinc-50">
-      <div className="flex flex-col justify-center sm:gap-4 p-3 sm:p-16 max-w-5xl mx-auto">
+    <section
+      id="about"
+      className="min-h-[calc(100svh-74px)] flex flex-col justify-start p-3 sm:p-16 bg-gradient-to-r from-violet-100 to-white"
+    >
+      <div className="max-w-5xl mx-auto w-full">
         <Tabs>
           {TabTitleList.map((tab, ind) => (
             <TabContent key={ind} title={tab.title}>

@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-10 shadow-md bg-white">
+      <div className="sticky top-0 z-10 bg-white">
         <section className="max-w-5xl mx-auto p-4 flex justify-between items-center">
           <h1 className="text-3xl font-medium">
             <Link spy={true} smooth={true} to="home" offset={-70}>
@@ -34,7 +34,10 @@ const NavBar = () => {
               <ul className="flex gap-6">
                 <NavList
                   list_classes={[
-                    "hover:text-blue-600",
+                    "hover:bg-violet-400",
+                    "hover:text-white",
+                    "p-4",
+                    "rounded-lg",
                     "transition",
                     "cursor-pointer",
                   ]}
@@ -50,7 +53,7 @@ const NavBar = () => {
                   <NavList
                     list_classes={[
                       "py-4",
-                      "hover:bg-blue-800",
+                      "hover:bg-violet-400",
                       "hover:text-white",
                     ]}
                     onClick={() => setMenuOpen(false)}
