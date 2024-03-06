@@ -45,14 +45,14 @@ const Home = () => {
             </p>
             <div className="flex justify-center my-1 sm:my-3">
               <a
-                className="text-blue-600 hover:text-blue-500 glow p-2 text-4xl"
+                className="text-blue-600 hover:text-blue-500 glow p-2 text-5xl"
                 href="https://www.linkedin.com/in/peiyingwu"
                 target="_blank"
               >
                 <FaLinkedin />
               </a>
               <a
-                className="text-gray-700 hover:text-blue-500 glow p-2 text-4xl"
+                className="text-gray-700 hover:text-blue-500 glow p-2 text-5xl"
                 href="https://github.com/PeiYingWu100"
                 target="_blank"
               >
@@ -74,7 +74,7 @@ const Home = () => {
         </div>
 
         {/* bottom */}
-        <div className="w-full flex flex-wrap item-center justify-center">
+        <div className="w-full flex flex-wrap item-center justify-center lg:justify-start sm:mt-2">
           <p className="text-xl text-slate-700 text-center">Tech skills:</p>
           <ul className="ml-5 text-5xl flex gap-4 flex-wrap justify-center">
             <li className="flex">
