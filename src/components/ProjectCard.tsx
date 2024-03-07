@@ -1,36 +1,57 @@
-import { useState } from "react";
+import Button from "./Button";
+import { Project } from "./ProjectCards";
 
-const ProjectCard = () => {
-  const [isHovered, setIsHovered] = useState(false);
+interface Props extends Project {
+  key: number;
+}
 
+const ProjectCard = ({
+  img,
+  title,
+  details,
+  tech,
+  githubLink,
+  demoLink,
+  IsImgRight,
+}: Props) => {
   return (
     <div
       role="card"
-      className="custom-animation-card relative w-full h-72 bg-pink-300"
+      className={`flex flex-col justify-center items-center gap-8 w-full min-h-72 mb-16 flex-nowrap shadow-lg md:shadow-none p-4 md:p-0 rounded-lg ${
+        IsImgRight ? "md:flex-row-reverse" : "md:flex-row"
+      }`}
     >
-      <img
-        className="w-1/2 absolute left-0 z-10"
-        src="../../public/project_rawg.jpg"
-        alt="test"
-        width="360"
-        height="170"
-      />
-      <article
-        className={`bg-white absolute right-0 -bottom-10 w-3/5 min-h-60 ${
-          isHovered
-            ? "custom-animation-content-back"
-            : "custom-animation-content"
-        }`}
-        onMouseLeave={() => setIsHovered(true)}
-        onMouseEnter={() => setIsHovered(false)}
-      >
-        <h4 className="text-2xl">Project Title</h4>
-        <p className="text-slate-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
-          iusto laboriosam explicabo ipsa fuga facere eum labore nulla
-          repudiandae rem omnis optio pariatur architecto doloremque, minus est
-          assumenda vitae?
-        </p>
+      <figure className="w-full md:w-1/2 flex justify-center items-center">
+        <img
+          className="w-full h-auto rounded-lg shadow-md"
+          src={img}
+          alt="test"
+          width="360"
+          height="170"
+        />
+      </figure>
+      <article className="w-full md:w-1/2 min-h-60 flex flex-col justify-between">
+        <div>
+          <h3 className="text-violet-400 text-2xl mb-2">{title}</h3>
+          <p className="text-slate-700">{details}</p>
+        </div>
+        <div className="flex flex-row justify-center gap-4 mt-4 flex-initial flex-wrap">
+          <p className="text-slate-700 w-full ">
+            tech: <strong>{tech}</strong>
+          </p>
+          <Button
+            list_classes={["flex-grow", "shrink-0", "basis-0"]}
+            href={githubLink}
+          >
+            Source Code
+          </Button>
+          <Button
+            list_classes={["flex-grow", "shrink-0", "basis-0"]}
+            href={demoLink}
+          >
+            Demo
+          </Button>
+        </div>
       </article>
     </div>
   );
