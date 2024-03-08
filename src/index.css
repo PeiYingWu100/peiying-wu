@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-violet-radial-gradient{
+    background: radial-gradient(#f5f5f4, #ede9fe);
+}
