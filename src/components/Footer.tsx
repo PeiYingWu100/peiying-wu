@@ -1,6 +1,7 @@
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { Link } from "react-scroll";
 import NavList from "./NavList";
+import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
@@ -23,8 +24,16 @@ const Footer = () => {
           </ul>
         </nav>
         <p className="text-center mt-4">
-          Developed by React.js with Vite, TypeScript, and Tailwind CSS, and
-          deployed on Vercel.
+          Developed by{" "}
+          <FooterLink href="https://react.dev/">React.js</FooterLink> with{" "}
+          <FooterLink href="https://vitejs.dev/">Vite</FooterLink>,{" "}
+          <FooterLink href="https://www.typescriptlang.org/">
+            TypeScript
+          </FooterLink>
+          , and{" "}
+          <FooterLink href="https://tailwindcss.com/">Tailwind CSS</FooterLink>,
+          and deployed on{" "}
+          <FooterLink href="https://vercel.com/">Vercel</FooterLink>.
           <br />
           Copyright © 2024.
         </p>
