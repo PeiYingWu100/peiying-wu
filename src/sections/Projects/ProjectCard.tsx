@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../../components/Button";
 import { Project } from "./ProjectCards";
 
 interface Props extends Project {

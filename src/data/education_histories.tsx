@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { History } from "../components/Timeline";
+import { History } from "../sections/About/Timeline";
 
 interface EducationDetails {
   desc: ReactElement;

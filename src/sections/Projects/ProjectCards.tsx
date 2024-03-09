@@ -1,4 +1,4 @@
-import Projects from "../data/projects";
+import Projects from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 
 export interface Project {

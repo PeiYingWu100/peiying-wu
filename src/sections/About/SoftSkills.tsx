@@ -1,6 +1,6 @@
-import TextCards from "./TextCards";
-import TextCard from "./TextCard";
-import SkillList from "../data/soft_skills";
+import TextCards from "../../components/TextCards";
+import TextCard from "../../components/TextCard";
+import SkillList from "../../data/soft_skills";
 
 const SoftSkills = () => {
   return (

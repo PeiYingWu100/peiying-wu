@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import Link from "../components/Link";
-import { History } from "../components/Timeline";
+import { History } from "../sections/About/Timeline";
 
 interface EmploymentDetails {
   desc: ReactElement;

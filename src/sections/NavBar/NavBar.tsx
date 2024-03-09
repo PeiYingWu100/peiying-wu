@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-scroll";
-import NavList from "./NavList";
+import NavList from "../../components/NavList";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

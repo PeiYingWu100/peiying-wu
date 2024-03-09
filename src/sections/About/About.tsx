@@ -1,5 +1,5 @@
-import Tabs from "./Tabs";
-import TabContent from "./TabContent";
+import Tabs from "../../components/Tabs";
+import TabContent from "../../components/TabContent";
 import SoftSkills from "./SoftSkills";
 import WorkHistory from "./WorkHistory";
 import Education from "./EducationHistory";

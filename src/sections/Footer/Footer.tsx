@@ -1,6 +1,6 @@
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { Link } from "react-scroll";
-import NavList from "./NavList";
+import NavList from "../../components/NavList";
 import FooterLink from "./FooterLink";
 
 const Footer = () => {

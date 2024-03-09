@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
-import Tooltip from "./Tooltip";
+import Tooltip from "../../components/Tooltip";
 
 const Home = () => {
   return (

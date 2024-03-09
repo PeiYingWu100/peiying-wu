@@ -1,6 +1,6 @@
 import Timeline from "./Timeline";
 import TimeLines from "./Timelines";
-import EmployHistories from "../data/employ_histories";
+import EmployHistories from "../../data/employ_histories";
 
 const WorkHistory = () => {
   return (

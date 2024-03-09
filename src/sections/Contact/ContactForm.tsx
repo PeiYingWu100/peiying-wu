@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
-import ErrorMessage from "./ErrorMessage";
+import ErrorMessage from "../../components/ErrorMessage";
 import { FaArrowCircleDown } from "react-icons/fa";
 
 const ContactForm = () => {
