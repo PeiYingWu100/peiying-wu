@@ -60,7 +60,7 @@ const ContactForm = () => {
             className="block text-sm font-semibold mb-2"
             htmlFor="user_name"
           >
-            Your name
+            Your name *
           </label>
           <input
             {...register("user_name", { required: true, minLength: 3 })}
@@ -87,7 +87,7 @@ const ContactForm = () => {
             className="block text-sm font-semibold mb-2"
             htmlFor="user_email"
           >
-            Email Address
+            Email Address *
           </label>
           <input
             {...register("user_email", {
@@ -115,7 +115,7 @@ const ContactForm = () => {
 
         <div>
           <label className="block text-sm font-semibold mb-2" htmlFor="subject">
-            Email Subject
+            Email Subject *
           </label>
           <input
             {...register("subject", { required: true, minLength: 2 })}
@@ -139,7 +139,7 @@ const ContactForm = () => {
 
         <div>
           <label className="block text-sm font-semibold mb-2" htmlFor="message">
-            Message
+            Message *
           </label>
           {errors.message?.type === "required" && (
             <ErrorMessage> The message field is required!</ErrorMessage>
