@@ -2,6 +2,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 const ContactForm = () => {
   const {
@@ -23,8 +24,6 @@ const ContactForm = () => {
     const templateId: string = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicId: string = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    console.log("been here");
-
     emailjs
       .sendForm(serviceId, templateId, currentForm, {
         publicKey: publicId,
@@ -44,6 +43,12 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-md grow">
+      <p className="font-bold text-xl flex items-center gap-2">
+        Write me a Message{" "}
+        <span className="inline-block text-violet-400">
+          <FaArrowCircleDown className="animate-bounce w-8 h-8" />
+        </span>
+      </p>
       <form
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
