@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io";
 import { Link } from "react-scroll";
-import NavList from "../../components/NavList";
+import MobileNav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <>
       <header className="sticky top-0 z-10 bg-white">
@@ -18,49 +14,8 @@ const NavBar = () => {
           </h2>
 
           <div>
-            {/* mobile */}
-            <button
-              className="text-3xl sm:hidden focus:outline-none"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
-            </button>
-
-            {/* desktop nav list */}
-            <nav
-              className="hidden sm:block space-x-8 text-xl"
-              arial-label="main"
-            >
-              <ul className="flex gap-6">
-                <NavList
-                  list_classes={[
-                    "hover:bg-violet-400",
-                    "hover:text-white",
-                    "p-4",
-                    "rounded-lg",
-                    "transition",
-                    "cursor-pointer",
-                  ]}
-                  onClick={() => null}
-                />
-              </ul>
-            </nav>
-
-            {/* mobile nav list */}
-            {menuOpen && (
-              <div>
-                <ul className="sm:hidden block absolute w-full left-0 right-0 bg-white transition shadow-md text-center text-xl">
-                  <NavList
-                    list_classes={[
-                      "py-4",
-                      "hover:bg-violet-400",
-                      "hover:text-white",
-                    ]}
-                    onClick={() => setMenuOpen(false)}
-                  />
-                </ul>
-              </div>
-            )}
+            <MobileNav />
+            <DesktopNav />
           </div>
         </section>
       </header>
