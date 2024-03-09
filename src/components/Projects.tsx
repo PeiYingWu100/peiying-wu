@@ -10,7 +10,7 @@ const Projects = () => {
         <h2 className="text-3xl font-medium text-center text-violet-400">
           Protfolio
         </h2>
-        <div className="flex justify-center items-center grow flex-wrap my-10">
+        <div className="flex justify-center items-center grow flex-wrap my-5">
           <ProjectCards />
         </div>
       </div>

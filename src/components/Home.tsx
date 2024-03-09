@@ -45,14 +45,14 @@ const Home = () => {
             </p>
             <div className="flex justify-center my-1 sm:my-3">
               <a
-                className="text-blue-600 hover:text-blue-500 glow p-2 text-5xl"
+                className="text-blue-600 hover:text-blue-500 p-2 text-5xl"
                 href="https://www.linkedin.com/in/peiyingwu"
                 target="_blank"
               >
                 <FaLinkedin />
               </a>
               <a
-                className="text-gray-700 hover:text-blue-500 glow p-2 text-5xl"
+                className="text-gray-700 hover:text-blue-500 p-2 text-5xl"
                 href="https://github.com/PeiYingWu100"
                 target="_blank"
               >

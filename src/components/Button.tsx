@@ -10,7 +10,7 @@ const Button = ({ href, children, list_classes }: Props) => {
   return (
     <a
       href={href}
-      className={`rounded-lg w-full py-2 text-center text-white bg-violet-400 hover:opacity-75 ${list_classes?.join(
+      className={`rounded-lg w-full py-2 px-4 text-center text-white bg-violet-400 hover:opacity-75 ${list_classes?.join(
         " "
       )}`}
       target="_blank"

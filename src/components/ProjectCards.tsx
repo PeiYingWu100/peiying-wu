@@ -43,7 +43,7 @@ const Projects: Project[] = [
 
 const ProjectCards = () => {
   return (
-    <div className="flex justify-center items-center grow flex-wrap my-10">
+    <div className="flex justify-center items-center grow flex-wrap">
       {Projects.map((project, ind) => (
         <ProjectCard
           key={ind}
