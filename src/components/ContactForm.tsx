@@ -13,8 +13,6 @@ const ContactForm = () => {
     defaultValues: { user_name: "", user_email: "", subject: "", message: "" },
   });
 
-  console.log(errors);
-
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = () => {
@@ -45,7 +43,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-md grow">
       <form
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
@@ -53,9 +51,15 @@ const ContactForm = () => {
         noValidate
       >
         <div>
+          <label
+            className="block text-sm font-semibold mb-2"
+            htmlFor="user_name"
+          >
+            Your name
+          </label>
           <input
             {...register("user_name", { required: true, minLength: 3 })}
-            className={`${
+            className={`w-full px-3 py-2 border rounded-lg ${
               errors.user_name?.type ? "border-2 border-red-600" : ""
             }`}
             id="user_name"
@@ -74,6 +78,12 @@ const ContactForm = () => {
         </div>
 
         <div>
+          <label
+            className="block text-sm font-semibold mb-2"
+            htmlFor="user_email"
+          >
+            Email Address
+          </label>
           <input
             {...register("user_email", {
               required: "Email is required",
@@ -82,7 +92,7 @@ const ContactForm = () => {
                 message: "Invalid email address!",
               },
             })}
-            className={`${
+            className={`w-full px-3 py-2 border rounded-lg ${
               errors.user_name?.type ? "border-2 border-red-600" : ""
             }`}
             id="user_email"
@@ -99,9 +109,12 @@ const ContactForm = () => {
         </div>
 
         <div>
+          <label className="block text-sm font-semibold mb-2" htmlFor="subject">
+            Email Subject
+          </label>
           <input
             {...register("subject", { required: true, minLength: 2 })}
-            className={`${
+            className={`w-full px-3 py-2 border rounded-lg ${
               errors.user_name?.type ? "border-2 border-red-600" : ""
             }`}
             id="subject"
@@ -120,6 +133,9 @@ const ContactForm = () => {
         </div>
 
         <div>
+          <label className="block text-sm font-semibold mb-2" htmlFor="message">
+            Message
+          </label>
           {errors.message?.type === "required" && (
             <ErrorMessage> The message field is required!</ErrorMessage>
           )}
@@ -130,7 +146,7 @@ const ContactForm = () => {
           )}
           <textarea
             {...register("message", { required: true, minLength: 2 })}
-            className={`${
+            className={`w-full px-3 py-2 border rounded-lg ${
               errors.user_name?.type ? "border-2 border-red-600" : ""
             }`}
             id="message"
