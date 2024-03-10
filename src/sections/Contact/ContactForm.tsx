@@ -8,7 +8,7 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: { user_name: "", user_email: "", subject: "", message: "" },
@@ -31,9 +31,7 @@ const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          if (currentForm) {
-            currentForm.reset();
-          }
+          reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
