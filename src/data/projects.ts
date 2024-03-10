@@ -1,4 +1,12 @@
-import { Project } from "../sections/Projects/ProjectCards";
+export interface Project {
+  img: string;
+  title: string;
+  details: string;
+  tech: string;
+  githubLink: string;
+  demoLink: string;
+  IsImgRight?: boolean;
+}
 
 const Projects: Project[] = [
     {

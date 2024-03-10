@@ -1,16 +1,12 @@
 import Button from "../../components/Button";
-import { Project } from "./ProjectCards";
+import { Project } from "../../data/projects";
 
-interface Props extends Project {}
+interface Props {
+  project: Project;
+}
 
 const ProjectCard = ({
-  img,
-  title,
-  details,
-  tech,
-  githubLink,
-  demoLink,
-  IsImgRight,
+  project: { img, title, details, tech, githubLink, demoLink, IsImgRight },
 }: Props) => {
   const githubUrl = new URL(githubLink);
   const demoUrl = new URL(demoLink);
