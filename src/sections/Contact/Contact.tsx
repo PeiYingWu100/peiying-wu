@@ -1,7 +1,6 @@
-import { FaLinkedin } from "react-icons/fa";
 import ContactForm from "./ContactForm";
-import Button from "../../components/Button";
 import Container from "../../components/Container";
+import ContactBtns from "./ContactBtns";
 
 const Contact = () => {
   return (
@@ -21,28 +20,8 @@ const Contact = () => {
             <br />
             Let's connect and start a conversation!
           </p>
-          <p className="my-2 flex justify-center items-center gap-4">
-            <a
-              className="rounded-lg py-2 bg-blue-600 text-white p-2 text-lg flex items-center justify-center max-w-fit gap-2 hover:opacity-75"
-              href="https://www.linkedin.com/in/peiyingwu"
-            >
-              Contact me from{" "}
-              <span className="inline-block">
-                <FaLinkedin />
-              </span>
-            </a>
-            <Button
-              list_classes={[
-                "max-w-fit",
-                "flex",
-                "items-center",
-                "justify-center",
-              ]}
-              href="tel:0414082461"
-            >
-              Call Me
-            </Button>
-          </p>
+
+          <ContactBtns />
           <img
             className="rounded-lg hidden md:block w-full h-auto"
             src="../../public/keyboard_flower.jpeg"
