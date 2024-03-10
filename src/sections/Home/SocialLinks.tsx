@@ -17,8 +17,12 @@ const ProfileLinks: ProfileLink[] = [
 const SocialLinks = () => {
   return (
     <>
-      {ProfileLinks.map((profileLink) => (
-        <SocialLink bgColor={profileLink.bgColor} href={profileLink.href}>
+      {ProfileLinks.map((profileLink, ind) => (
+        <SocialLink
+          key={ind}
+          bgColor={profileLink.bgColor}
+          href={profileLink.href}
+        >
           {profileLink.children}
         </SocialLink>
       ))}

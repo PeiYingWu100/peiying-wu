@@ -6,15 +6,7 @@ const WorkHistory = () => {
   return (
     <TimeLines>
       {EducationHistories.map((edu, ind) => (
-        <Timeline
-          key={ind}
-          history={edu}
-          title={edu.title}
-          org={edu.org}
-          start={edu.start}
-          end={edu.end}
-          details={edu.details}
-        />
+        <Timeline key={ind} history={edu} />
       ))}
     </TimeLines>
   );
