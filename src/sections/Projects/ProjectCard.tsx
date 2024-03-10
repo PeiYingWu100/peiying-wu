@@ -1,9 +1,7 @@
 import Button from "../../components/Button";
 import { Project } from "./ProjectCards";
 
-interface Props extends Project {
-  key: number;
-}
+interface Props extends Project {}
 
 const ProjectCard = ({
   img,

@@ -1,15 +1,14 @@
 import { ReactElement } from "react";
 
 export interface History {
-    title: string;
-    org: string;
-    start: Date;
-    end: Date;
-    details: ReactElement[];
+  title: string;
+  org: string;
+  start: Date;
+  end: Date;
+  details: ReactElement[];
 }
 
 interface Props extends History {
-  key: number;
   history: History;
 }
 
@@ -24,20 +23,14 @@ const Timeline = ({ history }: Props) => {
       <p className="text-xs/6 text-slate-700">{history.org}</p>
       <p className="font-display text-2xs/6 order-first font-semibold tracking-[0.2em] text-violet-400">
         <time dateTime={history.start.toLocaleString()}>
-          {`${history.start.getFullYear()}/${
-            history.start.getMonth() + 1
-          }`}
+          {`${history.start.getFullYear()}/${history.start.getMonth() + 1}`}
         </time>{" "}
         -
         <time
           dateTime={history.end.toLocaleString()}
-        >{`${history.end.getFullYear()}/${
-          history.end.getMonth() + 1
-        }`}</time>
+        >{`${history.end.getFullYear()}/${history.end.getMonth() + 1}`}</time>
       </p>
-      <ul className="mt-0.5 text-sm/6 text-zinc-400 ml-5">
-        {history.details}
-      </ul>
+      <ul className="mt-0.5 text-sm/6 text-zinc-400 ml-5">{history.details}</ul>
     </li>
   );
 };

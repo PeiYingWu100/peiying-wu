@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 
 interface Props {
-  key: number;
   title: string;
   children: ReactElement;
 }
