@@ -1,23 +1,6 @@
-import {
-  FaLinkedin,
-  FaGithubSquare,
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaReact,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiJavascript,
-  SiPhpstorm,
-  SiMysql,
-  SiTypescript,
-  SiJquery,
-} from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-
-import Tooltip from "../../components/Tooltip";
 import Container from "../../components/Container";
+import SocialLinks from "./SocialLinks";
+import TechStacks from "./TechStacks";
 
 const Home = () => {
   return (
@@ -42,20 +25,7 @@ const Home = () => {
               Front-end development based in Sydney, Australia. 📍
             </p>
             <div className="flex justify-center my-1 sm:my-3">
-              <a
-                className="text-blue-600 hover:text-blue-500 p-2 text-5xl"
-                href="https://www.linkedin.com/in/peiyingwu"
-                target="_blank"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                className="text-gray-700 hover:text-blue-500 p-2 text-5xl"
-                href="https://github.com/PeiYingWu100"
-                target="_blank"
-              >
-                <FaGithubSquare />
-              </a>
+              <SocialLinks />
             </div>
           </article>
 
@@ -72,52 +42,7 @@ const Home = () => {
         </div>
 
         {/* bottom */}
-        <div className="w-full flex flex-wrap item-center justify-center lg:justify-start sm:mt-2">
-          <p className="text-xl text-slate-700 text-center">Tech skills:</p>
-          <ul className="ml-5 text-5xl flex gap-4 flex-wrap justify-center">
-            <li className="flex">
-              <Tooltip message={"HTML"}>
-                <FaHtml5 className="text-orange-600" />
-              </Tooltip>
-              <Tooltip message={"CSS"}>
-                <FaCss3Alt className="text-blue-600" />
-              </Tooltip>
-            </li>
-            <li className="flex">
-              <Tooltip message={"Bootstrap"}>
-                <FaBootstrap className="text-violet-600 text-[3.2rem]" />
-              </Tooltip>
-              <Tooltip message={"Tailwind"}>
-                <SiTailwindcss className="text-sky-400 rounded bg-gray-800 p-2 text-[2.6rem]" />
-              </Tooltip>
-            </li>
-            <li className="flex">
-              <Tooltip message={"JavaScript"}>
-                <SiJavascript className="text-yellow-600 text-[2.6rem]" />
-              </Tooltip>
-              <Tooltip message={"Jquery"}>
-                <SiJquery className="text-white rounded bg-gray-800 p-2 text-[2.6rem] m-1" />
-              </Tooltip>
-              <Tooltip message={"TypeScript"}>
-                <SiTypescript className="text-white rounded bg-gray-800 p-2 text-[2.6rem] my-1" />
-              </Tooltip>
-              <Tooltip message={"React"}>
-                <FaReact className="text-blue-600  rounded bg-gray-800 p-2 text-[2.6rem] m-1" />
-              </Tooltip>
-              <Tooltip message={"Next.js"}>
-                <TbBrandNextjs className="text-white rounded bg-gray-800 p-2 text-[2.6rem] my-1" />
-              </Tooltip>
-            </li>
-            <li className="flex">
-              <Tooltip message={"PHP"}>
-                <SiPhpstorm className="text-blue-900 text-[2.6rem]" />
-              </Tooltip>
-              <Tooltip message={"SQL"}>
-                <SiMysql className="text-white rounded bg-gray-800 p-2 text-[2.6rem] m-1" />
-              </Tooltip>
-            </li>
-          </ul>
-        </div>
+        <TechStacks />
       </>
     </Container>
   );
