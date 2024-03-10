@@ -1,10 +1,9 @@
-import TextCards from "../../components/TextCards";
 import TextCard from "../../components/TextCard";
 import SkillList from "../../data/soft_skills";
 
 const SoftSkills = () => {
   return (
-    <TextCards>
+    <div className="flex justify-center gap-2 flex-wrap grow m-4">
       {SkillList.map((skill, ind) => (
         <TextCard
           key={ind}
@@ -12,7 +11,7 @@ const SoftSkills = () => {
           content={skill.content}
         ></TextCard>
       ))}
-    </TextCards>
+    </div>
   );
 };
 
