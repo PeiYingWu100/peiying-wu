@@ -1,15 +1,15 @@
 import { Link } from "react-scroll";
 
 interface NavLink {
-  href: string;
+  section: string;
   name: string;
 }
 
 const NavLinks: NavLink[] = [
-  { href: "home", name: "Home" },
-  { href: "about", name: "About" },
-  { href: "projects", name: "Projects" },
-  { href: "contact", name: "Contact" },
+  { section: "home", name: "Home" },
+  { section: "about", name: "About" },
+  { section: "projects", name: "Projects" },
+  { section: "contact", name: "Contact" },
 ];
 
 interface Props {
@@ -22,8 +22,8 @@ const NavList = ({ list_classes, onClick }: Props) => {
     <Link
       spy={true}
       smooth={true}
-      key={link.href}
-      to={link.href}
+      key={link.section}
+      to={link.section}
       onClick={onClick}
       offset={-70}
     >
