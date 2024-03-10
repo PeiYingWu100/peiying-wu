@@ -14,7 +14,7 @@ const ContactBtns = () => {
         </span>
       </a>
       <Button
-        list_classes={["max-w-fit", "flex", "items-center", "justify-center"]}
+        cssClasses={["max-w-fit", "flex", "items-center", "justify-center"]}
         href="tel:0414082461"
       >
         Call Me

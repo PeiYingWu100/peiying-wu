@@ -19,7 +19,7 @@ const MobileNav = () => {
         <div>
           <ul className="sm:hidden block absolute w-full left-0 right-0 bg-white transition shadow-md text-center text-xl">
             <NavList
-              list_classes={["py-4", "hover:bg-violet-400", "hover:text-white"]}
+              cssClasses={["py-4", "hover:bg-violet-400", "hover:text-white"]}
               onClick={() => setMenuOpen(false)}
             />
           </ul>

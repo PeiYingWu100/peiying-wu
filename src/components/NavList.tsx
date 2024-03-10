@@ -13,11 +13,11 @@ const NavLinks: NavLink[] = [
 ];
 
 interface Props {
-  list_classes: string[];
+  cssClasses: string[];
   onClick: () => void;
 }
 
-const NavList = ({ list_classes, onClick }: Props) => {
+const NavList = ({ cssClasses, onClick }: Props) => {
   return NavLinks.map((link) => (
     <Link
       spy={true}
@@ -27,7 +27,7 @@ const NavList = ({ list_classes, onClick }: Props) => {
       onClick={onClick}
       offset={-70}
     >
-      <li className={list_classes.join(" ")}>{link.name}</li>
+      <li className={cssClasses.join(" ")}>{link.name}</li>
     </Link>
   ));
 };

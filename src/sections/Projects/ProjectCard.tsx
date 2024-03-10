@@ -43,13 +43,13 @@ const ProjectCard = ({
             tech: <strong>{tech}</strong>
           </p>
           <Button
-            list_classes={["flex-grow", "shrink-0", "basis-0"]}
+            cssClasses={["flex-grow", "shrink-0", "basis-0"]}
             href={githubUrl.href}
           >
             Source Code
           </Button>
           <Button
-            list_classes={["flex-grow", "shrink-0", "basis-0"]}
+            cssClasses={["flex-grow", "shrink-0", "basis-0"]}
             href={demoUrl.href}
           >
             Demo
