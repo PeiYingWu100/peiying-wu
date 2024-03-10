@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <Container
       id="contact"
-      backGroundClasses={["custom-violet-radial-gradien"]}
-      classesList={["w-full"]}
+      bgClasses={["custom-violet-radial-gradien"]}
+      cssClasses={["w-full"]}
       title="Contact"
     >
       <div className="flex flex-col-reverse md:flex-row justify-center items-center flex-wrap my-5 gap-8">

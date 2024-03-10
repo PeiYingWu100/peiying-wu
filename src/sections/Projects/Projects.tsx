@@ -5,8 +5,8 @@ const Projects = () => {
   return (
     <Container
       id="projects"
-      backGroundClasses={["bg-gradient-to-r", "from-white", "to-violet-100"]}
-      classesList={["w-full"]}
+      bgClasses={["bg-gradient-to-r", "from-white", "to-violet-100"]}
+      cssClasses={["w-full"]}
       title="Protfolio"
     >
       <div className="flex justify-center items-center grow flex-wrap my-5">

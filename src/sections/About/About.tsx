@@ -15,8 +15,8 @@ const About = () => {
   return (
     <Container
       id="about"
-      backGroundClasses={["bg-gradient-to-r", "from-violet-100", "to-white"]}
-      classesList={["w-full"]}
+      bgClasses={["bg-gradient-to-r", "from-violet-100", "to-white"]}
+      cssClasses={["w-full"]}
     >
       <Tabs>
         {TabTitleList.map((tab, ind) => (
