@@ -3,6 +3,7 @@ import TabContent from "../../components/TabContent";
 import SoftSkills from "./SoftSkills";
 import WorkHistory from "./WorkHistory";
 import Education from "./EducationHistory";
+import Container from "../../components/Container";
 
 const TabTitleList = [
   { title: "Personal Attributes", child: <SoftSkills /> },
@@ -12,20 +13,19 @@ const TabTitleList = [
 
 const About = () => {
   return (
-    <section
+    <Container
       id="about"
-      className="min-h-[calc(100svh-74px)] flex flex-col justify-start p-3 sm:p-16 bg-gradient-to-r from-violet-100 to-white"
+      backGroundClasses={["bg-gradient-to-r", "from-violet-100", "to-white"]}
+      classesList={["w-full"]}
     >
-      <div className="max-w-5xl mx-auto w-full">
-        <Tabs>
-          {TabTitleList.map((tab, ind) => (
-            <TabContent key={ind} title={tab.title}>
-              {tab.child}
-            </TabContent>
-          ))}
-        </Tabs>
-      </div>
-    </section>
+      <Tabs>
+        {TabTitleList.map((tab, ind) => (
+          <TabContent key={ind} title={tab.title}>
+            {tab.child}
+          </TabContent>
+        ))}
+      </Tabs>
+    </Container>
   );
 };
 

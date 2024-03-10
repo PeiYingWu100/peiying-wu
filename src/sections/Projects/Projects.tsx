@@ -1,20 +1,18 @@
+import Container from "../../components/Container";
 import ProjectCards from "./ProjectCards";
 
 const Projects = () => {
   return (
-    <section
+    <Container
       id="projects"
-      className="min-h-[calc(100svh-74px)] flex flex-col justify-start p-3 sm:p-16 bg-gradient-to-r from-white to-violet-100"
+      backGroundClasses={["bg-gradient-to-r", "from-white", "to-violet-100"]}
+      classesList={["w-full"]}
+      title="Protfolio"
     >
-      <div className="max-w-5xl mx-auto w-full">
-        <h2 className="text-3xl font-medium text-center text-violet-400">
-          Protfolio
-        </h2>
-        <div className="flex justify-center items-center grow flex-wrap my-5">
-          <ProjectCards />
-        </div>
+      <div className="flex justify-center items-center grow flex-wrap my-5">
+        <ProjectCards />
       </div>
-    </section>
+    </Container>
   );
 };
 

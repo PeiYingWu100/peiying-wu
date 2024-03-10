@@ -17,14 +17,12 @@ import {
 import { TbBrandNextjs } from "react-icons/tb";
 
 import Tooltip from "../../components/Tooltip";
+import Container from "../../components/Container";
 
 const Home = () => {
   return (
-    <section
-      id="home"
-      className="min-h-[calc(100svh-74px)] flex flex-col justify-center item-center sm:gap-4 p-3 sm:p-16 "
-    >
-      <div className="max-w-5xl mx-auto">
+    <Container id="home">
+      <>
         <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-8 items-center">
           {/* left */}
           <article className="sm:w-1/2">
@@ -120,8 +118,8 @@ const Home = () => {
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </>
+    </Container>
   );
 };
 
