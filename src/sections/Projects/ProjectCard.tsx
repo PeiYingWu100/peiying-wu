@@ -14,6 +14,9 @@ const ProjectCard = ({
   demoLink,
   IsImgRight,
 }: Props) => {
+  const githubUrl = new URL(githubLink);
+  const demoUrl = new URL(demoLink);
+
   return (
     <div
       role="card"
@@ -41,13 +44,13 @@ const ProjectCard = ({
           </p>
           <Button
             list_classes={["flex-grow", "shrink-0", "basis-0"]}
-            href={githubLink}
+            href={githubUrl.href}
           >
             Source Code
           </Button>
           <Button
             list_classes={["flex-grow", "shrink-0", "basis-0"]}
-            href={demoLink}
+            href={demoUrl.href}
           >
             Demo
           </Button>

@@ -6,8 +6,10 @@ interface Props {
 }
 
 const Link = ({ href, children }: Props) => {
+  const url = new URL(href);
+
   return (
-    <a className="underline text-violet-400" href={href} target="_blank">
+    <a className="underline text-violet-400" href={url.href} target="_blank">
       {children}
     </a>
   );

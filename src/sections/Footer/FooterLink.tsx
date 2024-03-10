@@ -6,9 +6,11 @@ interface Props {
 }
 
 const FooterLink = ({ href, children }: Props) => {
+  const url = new URL(href);
+
   return (
     <a
-      href={href}
+      href={url.href}
       className="text-amber-100 hover:text-amber-200"
       target="_blank"
     >

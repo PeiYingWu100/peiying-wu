@@ -7,10 +7,12 @@ export interface ProfileLink {
 }
 
 const SocialLink = ({ bgColor, href, children }: ProfileLink) => {
+  const url = new URL(href);
+
   return (
     <a
       className={`${bgColor} hover:opacity-75 p-2 text-5xl`}
-      href={href}
+      href={url.href}
       target="_blank"
     >
       {children}
