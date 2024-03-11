@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Tabs = ({ children }: Props) => {
-  const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div>
