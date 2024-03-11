@@ -1,6 +1,7 @@
 import Container from "../../components/Container";
 import SocialLinks from "./SocialLinks";
 import TechStacks from "./TechStacks";
+import PeiYingWu from "../../public/pei_ying_wu.jpg";
 
 const Home = () => {
   return (
@@ -33,7 +34,11 @@ const Home = () => {
         <figure className="w-1/3 flex justify-center items-center">
           <img
             className="rounded-lg shadow-md"
+<<<<<<< HEAD
             src="/pei_ying_wu.jpg"
+=======
+            src={PeiYingWu}
+>>>>>>> 9cde77c6dc0ca9d2630fa77c37cb707c8a57d885
             alt="Pei Ying Wu"
             width="277"
             height="327"
