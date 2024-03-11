@@ -20,7 +20,14 @@ const Footer = () => {
                 <IoIosArrowDropupCircle className="animate-bounce w-8 h-8" />
               </Link>
             </li>
-            <NavList cssClasses={["cursor-pointer"]} onClick={() => null} />
+            <NavList
+              cssClasses={[
+                "cursor-pointer",
+                "hover:underline",
+                "hover:decoration-2",
+              ]}
+              onClick={() => null}
+            />
           </ul>
         </nav>
         <p className="text-center mt-4">
