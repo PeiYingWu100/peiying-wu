@@ -12,7 +12,7 @@ const Home = () => {
             Full-Stack Developer{" "}
             <img
               className="hidden sm:inline-block"
-              src="../../public/engineer.svg"
+              src="/engineer.svg"
               alt="Engineer"
               width="30"
               height="30"

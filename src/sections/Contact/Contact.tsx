@@ -24,7 +24,7 @@ const Contact = () => {
           <ContactBtns />
           <img
             className="rounded-lg hidden lg:block w-full h-auto"
-            src="../../public/keyboard_flower.jpeg"
+            src="/keyboard_flower.jpeg"
             width={585}
             height={432}
             alt="keyboard with flowers"

@@ -7,14 +7,14 @@ const AboutMe = () => {
       <div className="relative inline-block w-2/5 lg:w-1/3 h-96 ml-40">
         <img
           className="z-10 w-40 h-auto rounded-lg shadow-md absolute rotate-12 bottom-0 -right-4 sm:-right-12"
-          src="../../public/dog_2.jpeg"
+          src="/dog_2.jpeg"
           alt="dog"
           width="158"
           height="173"
         />
         <img
           className="min-w-64 w-72 h-auto rounded-lg shadow-md absolute -rotate-6 -left-40 sm:-left-20"
-          src="../../public/pei_ying_wu_2.png"
+          src="/pei_ying_wu_2.png"
           alt="Pei Ying Wu"
           width="135"
           height="240"
