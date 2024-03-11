@@ -21,12 +21,12 @@ const Timeline = ({ history: { title, org, start, end, details } }: Props) => {
       <p className="text-xs/6 text-slate-700">{org}</p>
       <p className="font-display text-2xs/6 order-first font-semibold tracking-[0.2em] text-violet-400">
         <time dateTime={start.toLocaleString()}>
-          {`${start.getFullYear()}/${start.getMonth() + 1}`}
+          {`${start.getFullYear()}/${start.getMonth()}`}
         </time>{" "}
         -
-        <time dateTime={end.toLocaleString()}>{`${end.getFullYear()}/${
-          end.getMonth() + 1
-        }`}</time>
+        <time
+          dateTime={end.toLocaleString()}
+        >{`${end.getFullYear()}/${end.getMonth()}`}</time>
       </p>
       <ul className="mt-0.5 text-sm/6 text-zinc-400 ml-5">{details}</ul>
     </li>
