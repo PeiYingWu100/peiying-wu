@@ -7,7 +7,7 @@ interface Props {
 
 const TimeLines = ({ children }: Props) => {
   return (
-    <ul role="list" className="m-8 max-w-screen-md">
+    <ul role="list" className="m-8 max-w-screen-lg">
       {children.map((item, ind) => (
         <Timeline key={ind} history={item.props.history} />
       ))}

@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <Container
       id="contact"
-      bgClasses={["custom-violet-radial-gradien"]}
+      bgClasses={["custom-violet-radial-gradient"]}
       cssClasses={["w-full"]}
       title="Contact"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center flex-wrap my-5 gap-8">
+      <div className="flex flex-col-reverse lg:flex-row justify-center items-center flex-wrap my-5 gap-8">
         <ContactForm />
-        <div className="w-full px-2 md:p-0 md:w-1/2 ">
+        <div className="w-full lg:p-0 lg:w-1/2 ">
           <p className="text-slate-700">
             I'd love to hear from you. Feel free to reach out if you have a
             question, want to discuss a project, or just want to say hello. Your
@@ -23,7 +23,7 @@ const Contact = () => {
 
           <ContactBtns />
           <img
-            className="rounded-lg hidden md:block w-full h-auto"
+            className="rounded-lg hidden lg:block w-full h-auto"
             src="../../public/keyboard_flower.jpeg"
             width={585}
             height={432}

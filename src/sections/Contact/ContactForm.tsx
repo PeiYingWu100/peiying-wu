@@ -40,7 +40,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md grow">
+    <div className="w-full md:max-w-sm grow">
       <p className="font-bold text-xl flex items-center gap-2">
         Write me a Message{" "}
         <span className="inline-block text-violet-400">
