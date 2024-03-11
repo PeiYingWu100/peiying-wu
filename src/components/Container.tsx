@@ -1,11 +1,11 @@
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   id: "home" | "about" | "projects" | "contact";
   bgClasses?: string[];
   cssClasses?: string[];
   title?: string;
-  children: ReactElement;
+  children: ReactNode;
 }
 
 const Container = ({
