@@ -10,7 +10,7 @@ const Tabs = ({ children }: Props) => {
 
   return (
     <div>
-      <ul className="flex list-none p-0 gap-1">
+      <ul className="flex list-none pb-8 gap-1">
         {children.map((item, index) => (
           <TabBtn
             active_classes={

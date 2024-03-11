@@ -3,7 +3,7 @@ import SkillList from "../../data/soft_skills";
 
 const SoftSkills = () => {
   return (
-    <div className="flex justify-center gap-2 flex-wrap grow m-4">
+    <div className="flex justify-center gap-2 flex-wrap grow mx-4">
       {SkillList.map((skill, ind) => (
         <TextCard
           key={ind}
