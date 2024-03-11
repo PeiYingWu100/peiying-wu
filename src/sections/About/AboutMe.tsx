@@ -2,18 +2,18 @@ const AboutMe = () => {
   return (
     <div
       role="card"
-      className="flex flex-col md:flex-row justify-center xl:justify-between items-center w-full mb-16 flex-wrap shadow-none p-0 mt-10"
+      className="flex flex-col lg:flex-row justify-center xl:justify-between items-center w-full flex-wrap shadow-none p-0 mt-4"
     >
-      <div className="relative inline-block w-2/5 sm:w-1/3 h-72 lg:h-96 ml-40">
+      <div className="relative inline-block w-2/5 lg:w-1/3 h-96 ml-40">
         <img
-          className="z-10 w-40 h-auto rounded-lg shadow-md absolute rotate-12 -bottom-20 -right-12"
+          className="z-10 w-40 h-auto rounded-lg shadow-md absolute rotate-12 bottom-0 -right-4 sm:-right-12"
           src="../../public/dog_2.jpeg"
           alt="dog"
           width="158"
           height="173"
         />
         <img
-          className="min-w-64 w-96 h-auto rounded-lg shadow-md absolute -rotate-6 -left-40 sm:-left-32"
+          className="min-w-64 w-72 h-auto rounded-lg shadow-md absolute -rotate-6 -left-40 sm:-left-20"
           src="../../public/pei_ying_wu_2.png"
           alt="Pei Ying Wu"
           width="135"
@@ -21,7 +21,7 @@ const AboutMe = () => {
         />
       </div>
 
-      <article className="w-full lg:w-1/2 px-0 lg:pl-20 mt-32 text-center lg:text-left text-slate-700 flex flex-col gap-2">
+      <article className="w-full lg:w-1/2 px-0 lg:pl-20 text-center mt-10 xl:mt-0 lg:text-left text-slate-700 flex flex-col gap-2">
         <p>
           As a developer, I focus on crafting solutions that address real-world
           challenges while making a meaningful social impact.
