@@ -9,7 +9,7 @@ const SkillList: Skills[] = [
   {
     title: <span>Self-motivated</span>,
     content:
-      "I am actively improving the knowledge of React through self-study. In addition, I completed an online course relating to HTML, CCS and JavaScript, which I enrolled in after graduating from UTS.",
+      "I am actively improving my knowledge of Web development through self-study. In addition, I completed multiple online courses relating to TypeScript, React, etc.",
   },
   {
     title: <span>Detail-oriented and organised</span>,
@@ -29,7 +29,7 @@ const SkillList: Skills[] = [
   {
     title: <span>Forward-thinking</span>,
     content:
-      "My prior role as a vice president and co-founder developed my strong forward- thinking skills. I did regularly in my role at HandUp and Funraisin to find the potential issues of the project.",
+      "My prior role as a vice president and co-founder developed my strong forward-thinking skills. I did regularly in my role at HandUp and Funraisin to find the potential issues of the project.",
   },
   {
     title: (
