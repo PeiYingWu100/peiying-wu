@@ -6,7 +6,7 @@ const AboutMe = () => {
     >
       <div className="relative inline-block w-2/5 sm:w-1/3 h-72 lg:h-96 ml-40">
         <img
-          className="z-20 w-40 h-auto rounded-lg shadow-md absolute rotate-12 -bottom-20 -right-12"
+          className="z-10 w-40 h-auto rounded-lg shadow-md absolute rotate-12 -bottom-20 -right-12"
           src="../../public/dog_2.jpeg"
           alt="dog"
           width="158"
