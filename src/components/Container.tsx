@@ -24,7 +24,7 @@ const Container = ({
     >
       <div className={`max-w-5xl mx-auto ${cssClasses?.join(" ")}`}>
         {title !== "" && (
-          <h2 className="text-3xl font-medium text-center text-violet-400">
+          <h2 className="text-3xl font-bold text-center text-violet-400">
             {title}
           </h2>
         )}

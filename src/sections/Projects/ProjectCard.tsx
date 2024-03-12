@@ -29,7 +29,9 @@ const ProjectCard = ({
       </figure>
       <article className="w-full md:w-1/2 min-h-60 flex flex-col justify-between">
         <div>
-          <h3 className="text-violet-400 text-2xl mb-2">{title}</h3>
+          <h3 className="text-violet-400 text-2xl mb-2 font-semibold">
+            {title}
+          </h3>
           <p className="text-slate-700">{details}</p>
         </div>
         <div className="flex flex-row justify-center gap-4 mt-4 flex-initial flex-wrap">
