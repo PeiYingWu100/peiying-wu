@@ -31,13 +31,11 @@ const Footer = () => {
           </ul>
         </nav>
         <p className="text-center mt-4">
-          Developed by{" "}
-          <FooterLink href="https://react.dev/">React.js</FooterLink> with{" "}
-          <FooterLink href="https://vitejs.dev/">Vite</FooterLink>,{" "}
+          Developed with{" "}
           <FooterLink href="https://www.typescriptlang.org/">
             TypeScript
           </FooterLink>
-          , and{" "}
+          , <FooterLink href="https://react.dev/">React.js</FooterLink>, and{" "}
           <FooterLink href="https://tailwindcss.com/">Tailwind CSS</FooterLink>,
           and deployed on{" "}
           <FooterLink href="https://vercel.com/">Vercel</FooterLink>.
