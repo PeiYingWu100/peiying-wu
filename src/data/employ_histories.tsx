@@ -9,12 +9,18 @@ interface EmploymentDetails {
 const FunraisinDev: EmploymentDetails[] = [
   { desc: <p>Employee of the Month!</p> },
   {
-    desc: <p>Customized more than 200 charity sites!</p>,
+    desc: (
+      <p>
+        Experienced in customising over 200 charity websites to align with their
+        objectives and enhance societal impact.
+      </p>
+    ),
   },
   {
     desc: (
       <p>
-        Christmas Concept Examples:{" "}
+        Develop personalized and visually engaging websites to enhance charity
+        fundraising efforts. Notable examples include the Christmas Concept:{" "}
         <Link href="https://www.womencan.org.au/event/honour-her/honour-wall">
           Women can – Honour Wall
         </Link>
