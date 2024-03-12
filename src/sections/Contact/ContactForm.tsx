@@ -2,10 +2,13 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "../../components/ErrorMessage";
-import { FaArrowCircleDown } from "react-icons/fa";
+import { FaArrowCircleDown, FaHeartBroken } from "react-icons/fa";
+import Popup from "../../components/Popup";
 
 const ContactForm = () => {
   const [isBtnDisabled, setIsBtnDisabled] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [isErrorMessage, setIsErrorMessage] = useState(false);
 
   const {
     register,
@@ -35,11 +38,17 @@ const ContactForm = () => {
       .then(
         () => {
           setIsBtnDisabled(false);
-          console.log("SUCCESS!");
           reset();
+
+          setIsErrorMessage(false);
+          setShowPopup(true);
+          console.log("SUCCESS!");
         },
         (error) => {
           setIsBtnDisabled(false);
+
+          setIsErrorMessage(true);
+          setShowPopup(true);
           console.log("FAILED...", error.text);
         }
       );
@@ -180,6 +189,24 @@ const ContactForm = () => {
           {isBtnDisabled ? "Sending..." : "Send Message"}
         </button>
       </form>
+
+      {/* Popups */}
+      {!isErrorMessage && (
+        <Popup isVisible={showPopup} onClose={() => setShowPopup(false)}>
+          Thank you for reaching out! <br />
+          I'll be sure to respond to your message as soon as possible.
+        </Popup>
+      )}
+      {isErrorMessage && (
+        <Popup isVisible={showPopup} onClose={() => setShowPopup(false)}>
+          <p className="text-red-600">
+            Something is broken <FaHeartBroken className="inline" /> Apologies
+            for the issue! <br />
+            Please try again later or reach out through alternative channels.
+            Thank you!
+          </p>
+        </Popup>
+      )}
     </div>
   );
 };
