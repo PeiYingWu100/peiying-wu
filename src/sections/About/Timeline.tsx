@@ -28,7 +28,7 @@ const Timeline = ({ history: { title, org, start, end, details } }: Props) => {
           dateTime={end.toLocaleString()}
         >{`${end.getFullYear()}/${end.getMonth()}`}</time>
       </p>
-      <ul className="mt-0.5 text-sm/6 text-zinc-400 ml-5">{details}</ul>
+      <ul className="mt-0.5 text-sm/6 text-zinc-500 ml-5">{details}</ul>
     </li>
   );
 };
