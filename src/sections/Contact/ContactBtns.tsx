@@ -7,6 +7,7 @@ const ContactBtns = () => {
       <a
         className="rounded-lg bg-blue-600 text-white p-2 text-lg flex items-center justify-center max-w-fit gap-2 hover:opacity-75"
         href="https://www.linkedin.com/in/peiyingwu"
+        target="_blank"
       >
         Contact me from{" "}
         <span className="inline-block">
