@@ -45,9 +45,9 @@ const TechStacks = () => {
           <Tooltip message={"React"}>
             <FaReact className="text-blue-600  rounded bg-gray-800 p-2 text-[2.6rem] m-1" />
           </Tooltip>
-          <Tooltip message={"Next.js"}>
+          {/* <Tooltip message={"Next.js"}>
             <TbBrandNextjs className="text-white rounded bg-gray-800 p-2 text-[2.6rem] my-1" />
-          </Tooltip>
+          </Tooltip> */}
         </li>
         <li className="flex">
           <Tooltip message={"PHP"}>
