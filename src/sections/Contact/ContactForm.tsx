@@ -1,10 +1,12 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "../../components/ErrorMessage";
 import { FaArrowCircleDown } from "react-icons/fa";
 
 const ContactForm = () => {
+  const [isBtnDisabled, setIsBtnDisabled] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -17,6 +19,8 @@ const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = () => {
+    setIsBtnDisabled(true);
+
     const currentForm = form.current;
     if (currentForm == null) return;
 
@@ -30,10 +34,12 @@ const ContactForm = () => {
       })
       .then(
         () => {
+          setIsBtnDisabled(false);
           console.log("SUCCESS!");
           reset();
         },
         (error) => {
+          setIsBtnDisabled(false);
           console.log("FAILED...", error.text);
         }
       );
@@ -160,9 +166,18 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="rounded-lg w-full py-2 text-center text-white bg-violet-400 hover:opacity-75"
+          className={`rounded-lg w-full py-2 text-center text-white bg-violet-400 hover:opacity-75 ${
+            isBtnDisabled ? "opacity-75" : ""
+          }`}
+          disabled={isBtnDisabled}
         >
-          Send Message
+          {isBtnDisabled && (
+            <div
+              className="ml-auto inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+              role="status"
+            ></div>
+          )}{" "}
+          {isBtnDisabled ? "Sending..." : "Send Message"}
         </button>
       </form>
     </div>
