@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       bgClasses={["bg-gradient-to-r", "from-white", "to-violet-100"]}
       cssClasses={["w-full"]}
-      title="Protfolio"
+      title="Projects"
     >
       <div className="flex justify-center items-center grow flex-wrap my-5">
         <ProjectCards />
