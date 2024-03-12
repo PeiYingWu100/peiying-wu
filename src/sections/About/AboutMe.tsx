@@ -40,6 +40,7 @@ const AboutMe = () => {
           I look forward to connecting and making a positive difference
           together!
         </p>
+        <p>Based in Sydney, Australia. 📍</p>
       </article>
     </div>
   );
