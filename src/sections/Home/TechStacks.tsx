@@ -7,7 +7,7 @@ import {
   SiTypescript,
   SiJquery,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+// import { TbBrandNextjs } from "react-icons/tb";
 
 import Tooltip from "../../components/Tooltip";
 
