@@ -32,7 +32,7 @@ const Home = () => {
         <figure className="w-1/3 flex justify-center items-center">
           <img
             className="rounded-lg shadow-md"
-            src="/pei_ying_wu.jpg"
+            src="/pei_ying_wu.jpeg"
             alt="Pei Ying Wu"
             width="277"
             height="327"
