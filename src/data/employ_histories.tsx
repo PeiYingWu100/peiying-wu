@@ -38,7 +38,7 @@ const FunraisinDev: EmploymentDetails[] = [
   {
     desc: (
       <p>
-        Skills: <strong>PHP, HTML, CSS, JavaScript, JQuery, SQL</strong>
+        Skills: <strong>HTML, CSS, JavaScript, JQuery, SQL, PHP</strong>
       </p>
     ),
   },
