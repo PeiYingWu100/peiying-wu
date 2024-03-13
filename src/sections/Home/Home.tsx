@@ -20,8 +20,8 @@ const Home = () => {
             ✨
           </h1>
           <p className="max-w-xl text-xl sm:text-2xl mt-3 text-center text-slate-700">
-            Hi, I'm Pei-Ying Wu — A developer passionate about Front-end
-            development with Economics and Math background.
+            Hello, I'm Pei-Ying Wu — A developer passionate about front-end
+            development with a background in economics and mathematics.
           </p>
           <div className="flex justify-center my-1 sm:my-3">
             <SocialLinks />
