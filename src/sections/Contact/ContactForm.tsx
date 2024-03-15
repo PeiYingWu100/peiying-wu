@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "../../components/ErrorMessage";
-import { FaArrowCircleDown, FaHeartBroken } from "react-icons/fa";
+import { FaHeartBroken } from "react-icons/fa";
 import Popup from "../../components/Popup";
 
 const ContactForm = () => {
@@ -55,13 +55,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full md:max-w-sm grow">
-      <p className="font-bold text-xl flex items-center gap-2">
-        Write me a Message{" "}
-        <span className="inline-block text-violet-400">
-          <FaArrowCircleDown className="animate-bounce w-8 h-8" />
-        </span>
-      </p>
+    <div className="w-10/12 md:max-w-md grow">
       <form
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
@@ -100,7 +94,7 @@ const ContactForm = () => {
             className="block text-sm font-semibold mb-2"
             htmlFor="user_email"
           >
-            Email Address *
+            Your Email Address *
           </label>
           <input
             {...register("user_email", {

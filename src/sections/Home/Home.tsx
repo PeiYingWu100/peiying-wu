@@ -4,7 +4,15 @@ import TechStacks from "./TechStacks";
 
 const Home = () => {
   return (
-    <Container id="home" bgClasses={["justify-center"]}>
+    <Container
+      id="home"
+      bgClasses={[
+        "justify-center",
+        "bg-gradient-to-tr",
+        "from-white",
+        "to-violet-50",
+      ]}
+    >
       <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-12 items-center sm:justify-center">
         {/* left */}
         <article className="sm:w-1/2">

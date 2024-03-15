@@ -1,26 +1,34 @@
 import ContactForm from "./ContactForm";
 import Container from "../../components/Container";
 import ContactBtns from "./ContactBtns";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <Container
       id="contact"
-      bgClasses={["custom-violet-radial-gradient", "justify-center"]}
+      bgClasses={[
+        "justify-center",
+        "bg-gradient-to-b",
+        "from-white",
+        "to-violet-100",
+      ]}
       cssClasses={["w-full"]}
       title="Contact"
+      titleIcon={
+        <span className="inline-block text-violet-400">
+          <FaArrowCircleDown className="animate-bounce w-6 h-6" />
+        </span>
+      }
     >
+      <p className="text-slate-700 text-center px-3.5 mt-4">
+        Feel free to reach out for questions, project discussions, or just to
+        say hello. Your message is appreciated, and I'll reply as soon as
+        possible. Let's connect and chat!
+      </p>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center flex-wrap my-5 gap-8">
         <ContactForm />
-        <div className="w-full lg:p-0 lg:w-1/2 ">
-          <p className="text-slate-700">
-            I'd love to hear from you. Feel free to reach out if you have a
-            question, want to discuss a project, or just want to say hello. Your
-            message means a lot to me, and I'll get back to you ASAP.
-            <br />
-            Let's connect and start a conversation!
-          </p>
-
+        <div className="w-full lg:p-0 lg:w-2/5 ">
           <ContactBtns />
           <img
             className="rounded-lg hidden lg:block w-full h-auto"

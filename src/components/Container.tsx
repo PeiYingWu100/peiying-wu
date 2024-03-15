@@ -5,6 +5,7 @@ interface Props {
   bgClasses?: string[];
   cssClasses?: string[];
   title?: string;
+  titleIcon?: ReactNode;
   children: ReactNode;
 }
 
@@ -13,6 +14,7 @@ const Container = ({
   bgClasses = [""],
   cssClasses = [""],
   title,
+  titleIcon,
   children,
 }: Props) => {
   return (
@@ -25,7 +27,7 @@ const Container = ({
       <div className={`max-w-5xl mx-auto ${cssClasses?.join(" ")}`}>
         {title !== "" && (
           <h2 className="text-3xl font-bold text-center text-violet-400">
-            {title}
+            {title} {titleIcon}
           </h2>
         )}
         {children}
