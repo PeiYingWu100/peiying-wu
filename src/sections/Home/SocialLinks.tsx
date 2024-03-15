@@ -3,12 +3,12 @@ import SocialLink, { ProfileLink } from "./SocialLink";
 
 const ProfileLinks: ProfileLink[] = [
   {
-    bgColor: "text-blue-600",
+    bgColor: "text-slate-700",
     href: "https://www.linkedin.com/in/peiyingwu",
     children: <FaLinkedin />,
   },
   {
-    bgColor: "text-gray-700",
+    bgColor: "text-slate-700",
     href: "https://github.com/PeiYingWu100",
     children: <FaGithubSquare />,
   },
