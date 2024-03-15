@@ -4,8 +4,8 @@ import TechStacks from "./TechStacks";
 
 const Home = () => {
   return (
-    <Container id="home">
-      <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-8 items-center">
+    <Container id="home" bgClasses={["justify-center"]}>
+      <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-12 items-center sm:justify-center">
         {/* left */}
         <article className="sm:w-1/2">
           <h1 className="max-w-xl text-2xl font-bold text-center sm:text-5xl text-slate-900 mt-3">
@@ -21,9 +21,9 @@ const Home = () => {
           </h1>
           <p className="max-w-xl text-xl sm:text-2xl mt-3 text-center text-slate-700">
             Hello, I'm Pei-Ying Wu — A developer passionate about front-end
-            development with a background in economics and mathematics.
+            development!
           </p>
-          <div className="flex justify-center my-1 sm:my-3">
+          <div className="flex justify-center">
             <SocialLinks />
           </div>
         </article>
