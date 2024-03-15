@@ -6,7 +6,7 @@ interface Props {
 }
 
 const TabContent = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return <>{children}</>;
 };
 
 export default TabContent;
