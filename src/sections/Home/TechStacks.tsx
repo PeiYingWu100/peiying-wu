@@ -13,8 +13,10 @@ import Tooltip from "../../components/Tooltip";
 
 const TechStacks = () => {
   return (
-    <div className="w-full flex flex-wrap item-center justify-center lg:justify-start sm:mt-2">
-      <p className="text-xl text-slate-700 text-center">Tech Stack:</p>
+    <div className="w-full flex flex-wrap item-center justify-center mt-4 sm:mt-8">
+      <p className="text-xl font-bold text-slate-700 text-center flex items-center">
+        Tech Stack:
+      </p>
       <ul className="ml-5 text-5xl flex gap-4 flex-wrap justify-center">
         <li className="flex">
           <Tooltip message={"HTML"}>
