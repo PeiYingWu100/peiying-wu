@@ -7,7 +7,7 @@ interface Props {
 
 const TabBtn = ({ title, index, active_classes, setSelectedTab }: Props) => {
   return (
-    <li className="grow">
+    <li className="grow sm:flex-1">
       <button
         className={`border-2 border-violet-400 rounded-lg w-full py-2 hover:bg-violet-400 hover:text-white ${active_classes}`}
         onClick={() => setSelectedTab(index)}
