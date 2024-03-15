@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <Container
       id="contact"
-      bgClasses={["custom-violet-radial-gradient"]}
+      bgClasses={["custom-violet-radial-gradient", "justify-center"]}
       cssClasses={["w-full"]}
       title="Contact"
     >

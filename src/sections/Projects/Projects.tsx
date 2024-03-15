@@ -5,7 +5,12 @@ const Projects = () => {
   return (
     <Container
       id="projects"
-      bgClasses={["bg-gradient-to-r", "from-white", "to-violet-100"]}
+      bgClasses={[
+        "bg-gradient-to-r",
+        "from-white",
+        "to-violet-100",
+        "justify-center",
+      ]}
       cssClasses={["w-full"]}
       // title="Projects"
     >

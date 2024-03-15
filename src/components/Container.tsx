@@ -18,7 +18,7 @@ const Container = ({
   return (
     <section
       id={id}
-      className={`min-h-[calc(100svh-74px)] flex flex-col justify-center item-center sm:gap-4 p-3 sm:p-16 ${bgClasses?.join(
+      className={`min-h-[calc(100svh-74px)] flex flex-col item-center sm:gap-4 p-3 sm:p-16 ${bgClasses?.join(
         " "
       )}`}
     >

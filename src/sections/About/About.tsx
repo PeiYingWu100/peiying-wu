@@ -15,7 +15,12 @@ const About = () => {
   return (
     <Container
       id="about"
-      bgClasses={["bg-gradient-to-r", "from-violet-100", "to-white"]}
+      bgClasses={[
+        "bg-gradient-to-r",
+        "from-violet-100",
+        "to-white",
+        "justify-start",
+      ]}
       cssClasses={["w-full"]}
     >
       <Tabs>
