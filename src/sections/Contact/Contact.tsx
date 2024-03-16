@@ -21,10 +21,11 @@ const Contact = () => {
         </span>
       }
     >
-      <p className="text-slate-700 text-center px-3.5 mt-4">
+      <p className="text-slate-700 text-center px-3.5 mt-2">
         Feel free to reach out for questions, project discussions, or just to
-        say hello. Your message is appreciated, and I'll reply as soon as
-        possible. Let's connect and chat!
+        say hello. <br />
+        Your message is appreciated, and I'll reply as soon as possible. <br />
+        Let's connect and chat!
       </p>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center flex-wrap my-5 gap-8">
         <ContactForm />
