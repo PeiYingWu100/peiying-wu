@@ -13,19 +13,18 @@ const Home = () => {
         "to-violet-50",
       ]}
     >
-      <div className="flex flex-col-reverse sm:flex-row w-full gap4 sm:gap-12 items-center sm:justify-center">
+      <div className="flex flex-col-reverse sm:flex-row w-full gap-4 sm:gap-6 items-center sm:justify-center">
         {/* left */}
-        <article className="sm:w-1/2">
+        <article className="sm:w-2/3">
           <h1 className="max-w-xl text-2xl font-bold text-center sm:text-5xl text-slate-900 mt-3">
             Full-Stack Developer{" "}
             <img
-              className="hidden sm:inline-block"
+              className="hidden lg:inline-block"
               src="/engineer.svg"
               alt="Engineer"
               width="30"
               height="30"
             />
-            ✨
           </h1>
           <p className="max-w-xl text-xl sm:text-2xl mt-3 text-center text-slate-700">
             Hello, I'm Pei-Ying Wu — A developer passionate about front-end
