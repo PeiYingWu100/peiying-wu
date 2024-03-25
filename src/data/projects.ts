@@ -13,7 +13,7 @@ const Projects: Project[] = [
       img: "/project_weather.jpg",
       title: "Climate Cast",
       details:
-        "The weather web application automatically detects the user's location to provide current weather updates. In cases where the user's location is unavailable, the default display is set to Sydney, Australia. Additionally, users have the option to search for weather information in other locations. To ensure a seamless experience, the website features error messaging for any encountered issues and disables the search functionality during loading periods.",
+        "The weather web application automatically detects the user's location to provide current weather updates. If the user's location is unavailable, the default display is set to Sydney, Australia. Additionally, users can search for weather information in other locations, and the card background will dynamically adjust based on the time of day. To ensure a seamless experience, the website features error messaging for any issues encountered and disables search functionality during loading periods.",
       tech: "HTML, CSS, Bootstrap5, JavaScript, React, Vite",
       githubLink: "https://github.com/PeiYingWu100/climate-cast",
       demoLink: "https://climate-cast.vercel.app/",
