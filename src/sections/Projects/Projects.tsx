@@ -1,5 +1,5 @@
 import Container from "../../components/Container";
-// import ProjectCards from "./ProjectCards";
+import ProjectCards from "./ProjectCards";
 
 const Projects = () => {
   return (
@@ -12,17 +12,14 @@ const Projects = () => {
         "justify-center",
       ]}
       cssClasses={["w-full"]}
-      // title="Projects"
+      title="Projects"
     >
-      <div className="flex justify-around items-center grow flex-wrap my-5 flex-col h-44">
-        <h2 className="text-3xl font-bold text-center text-violet-400">
-          Projects
-        </h2>
-        <p className="text-2xl font-bold text-slate-700 text-center">
-          Exciting things are on the way!
+      <div className="flex justify-center items-center grow flex-wrap my-5">
+        <ProjectCards />
+        <p className="text-xl font-bold text-slate-700 text-center">
+          More Exciting things are on the way!
           <br /> Keep an eye out for new projects coming soon! 🤩
         </p>
-        {/* <ProjectCards /> */}
       </div>
     </Container>
   );
