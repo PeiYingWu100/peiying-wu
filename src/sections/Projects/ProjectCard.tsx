@@ -23,11 +23,11 @@ const ProjectCard = ({
   return (
     <div
       role="card"
-      className={`flex flex-col justify-center items-center gap-8 w-full min-h-72 mb-16 flex-nowrap shadow-lg md:shadow-none p-4 md:p-0 rounded-lg ${
+      className={`flex flex-col justify-center items-center gap-4 w-full min-h-72 mb-16 flex-nowrap shadow-lg md:shadow-none p-4 md:p-0 rounded-lg ${
         IsImgRight ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
-      <figure className="w-full md:w-1/2 flex justify-center items-center">
+      <figure className="w-full md:w-5/12 flex justify-center items-center">
         <img
           className="w-full h-auto rounded-lg shadow-md"
           src={img}
@@ -36,7 +36,7 @@ const ProjectCard = ({
           height="170"
         />
       </figure>
-      <article className="w-full md:w-1/2 min-h-60 flex flex-col justify-between">
+      <article className="w-full md:w-7/12 min-h-60 flex flex-col justify-between">
         <div className="text-slate-700">
           <h3 className="text-violet-400 text-2xl mb-2 font-semibold">
             {title}
