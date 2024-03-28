@@ -58,7 +58,7 @@ const ProjectCard = ({
           } flex-initial flex-wrap`}
         >
           <p className="text-slate-700 w-full ">
-            tech: <strong>{tech}</strong>
+            Tech: <strong>{tech}</strong>
           </p>
           <Button
             cssClasses={["flex-grow", "shrink-0", "basis-0"]}
