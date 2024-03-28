@@ -6,7 +6,16 @@ interface Props {
 }
 
 const ProjectCard = ({
-  project: { img, title, details, tech, githubLink, demoLink, IsImgRight },
+  project: {
+    img,
+    title,
+    details,
+    features,
+    tech,
+    githubLink,
+    demoLink,
+    IsImgRight,
+  },
 }: Props) => {
   const githubUrl = new URL(githubLink);
   const demoUrl = new URL(demoLink);
@@ -32,9 +41,22 @@ const ProjectCard = ({
           <h3 className="text-violet-400 text-2xl mb-2 font-semibold">
             {title}
           </h3>
-          <p className="text-slate-700">{details}</p>
+          <div className="text-slate-700">{details}</div>
+          {features && (
+            <div className="p-5">
+              <ul className="list-disc">
+                {features.map((feature, ind) => (
+                  <li key={ind}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-        <div className="flex flex-row justify-center gap-4 mt-4 flex-initial flex-wrap">
+        <div
+          className={`flex flex-row justify-center gap-4 ${
+            features ? "" : "mt-4"
+          } flex-initial flex-wrap`}
+        >
           <p className="text-slate-700 w-full ">
             tech: <strong>{tech}</strong>
           </p>
