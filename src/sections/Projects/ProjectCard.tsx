@@ -37,11 +37,11 @@ const ProjectCard = ({
         />
       </figure>
       <article className="w-full md:w-1/2 min-h-60 flex flex-col justify-between">
-        <div>
+        <div className="text-slate-700">
           <h3 className="text-violet-400 text-2xl mb-2 font-semibold">
             {title}
           </h3>
-          <div className="text-slate-700">{details}</div>
+          <div>{details}</div>
           {features && (
             <div className="p-5">
               <ul className="list-disc">
@@ -57,8 +57,8 @@ const ProjectCard = ({
             features ? "" : "mt-4"
           } flex-initial flex-wrap`}
         >
-          <p className="text-slate-700 w-full ">
-            Tech: <strong>{tech}</strong>
+          <p className="w-full">
+            Tech: <strong className="text-slate-700">{tech}</strong>
           </p>
           <Button
             cssClasses={["flex-grow", "shrink-0", "basis-0"]}
